@@ -10,6 +10,7 @@ public:
     Justifiers,
     SGBCommander,
     NTTDataKeypad,
+	DataModem,
   };
 
   enum class JoypadID : unsigned {
