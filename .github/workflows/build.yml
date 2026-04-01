@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - name: Install dependencies
       run: |
-        apt-get update
-        apt-get -y install qtbase5-dev qtbase5-dev-tools libxv-dev libsdl1.2-dev libao-dev libopenal-dev g++ libdbus-1-dev
+        sudo apt-get update
+        sudo apt-get -y install qtbase5-dev qtbase5-dev-tools libxv-dev libsdl1.2-dev libao-dev libopenal-dev g++ libdbus-1-dev
     - name: make
       run: make
